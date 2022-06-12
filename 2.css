@@ -1,0 +1,97 @@
+.heading{
+    display: inline-block;
+    width: 100%;
+}
+h2 {
+    color: rgb(53, 120, 184);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: -2em;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+h1 {
+    color: rgb(15, 89, 199);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.subheading {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    position: relative;
+    color: rgb(65, 64, 64);
+    text-align: center;
+    border: 2px solid rgb(15, 89, 199);
+    border-radius: 10px;
+    padding: 2px;
+    outline: 2px solid rgb(88, 190, 238);
+    margin-left: 29%;
+    margin-right: 29%;
+}
+
+img {
+    border: .5px solid #555;
+    height: 15px;
+    margin-top: 0px;
+}
+
+.dat {
+    font-size: -2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(65, 64, 64);
+    margin-left: 2%;
+
+}
+
+hr {
+    color: #4989e9;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 1px;
+}
+
+body {
+    background: aquamarine;
+    /* <basefont replacement> */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+}
+
+.education {
+    display: inline-block;
+    width: 100%;
+}
+
+.right {
+    float: right;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-right: 1%;
+}
+
+.left {
+    padding-left: 1%;
+    float: left;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.edu-data {
+    margin-left: 10%;
+    font-size: 15px;
+    font-style: italic;
+}
+
+ul {
+    list-style-image: url('./resources/2-star.png');
+}
+.expdata{
+    padding-left: 1%;
+    font-weight: bold;
+    font-style: italic;
+}

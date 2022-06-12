@@ -1,0 +1,21 @@
+<html>
+    <head><title>16</title>
+        <script type="text/javascript">
+            function calculate(){
+                var x0 = parseInt(document.getElementById('num').value, 10);
+                for (let i = 0; i <= 10; i++) {
+                    document.write(x0 * i + '<br>');                    
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Table</h1>
+        <form>
+            <label>Value</label> <input type="text" id="num" name="num"><br>
+            <br>
+            <br>
+            <input type="button" value="Check" onclick="calculate();">
+        </form>
+    </body>
+</html>             

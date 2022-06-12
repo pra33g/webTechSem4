@@ -1,0 +1,51 @@
+<html>
+    <head><title>16</title>
+        <script type="text/javascript">
+            function calculate(){
+                var x = parseFloat(document.getElementById('num1').value, 10);
+                var y = parseFloat(document.getElementById('num2').value, 10);
+                if (isNaN(x) || isNaN(y)){
+                    alert("Error");
+                    return;
+                }
+                var opt = document.getElementById('operation').value;
+                switch(opt){
+                    case "add":
+                        alert(x + " + " + y + " = " + parseFloat(x + y));
+                    break;
+                    case "sub":
+                        alert(x + " - " + y + " = " + parseFloat(x - y));
+                    break;
+                    case "mul":
+                        alert(x + " * " + y + " = " + parseFloat(x * y));
+                    break;
+                    case "div":
+                        alert(x + " / " + y + " = " + parseFloat(x / y));
+                    break;
+                    default:
+                        alert("Select operation.");
+                    break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <form>
+            <label for="num1">Value 1</label>
+            <input type="text" id="num1" name="num1">
+            <label for="num2"><br>Value 2</label>
+            <input type="text" id="num2" name="num2">
+            <label for="operation"><br>Operation</label>
+            <select id="operation" name="operation">
+                <option value="div" >/</option>
+                <option value="mul" >*</option>
+                <option value="add" >+</option>
+                <option value="sub" >-</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Calculate" onclick="calculate();">
+        </form>
+    </body>
+</html>             

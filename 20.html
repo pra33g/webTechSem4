@@ -1,0 +1,34 @@
+<html>
+    <head><title>16</title>
+        <script type="text/javascript">
+            function calculate(){
+                var x0 = parseInt(document.getElementById('age').value, 10);
+                if (isNaN(x0)){
+                    alert("Error");
+                    return;
+                }
+                if (x0 < -10){
+                    confirm("Dead :') ");
+                }
+                if (x0 < 13){
+                    confirm("Adolescent");
+                } else if (x0 < 18){
+                    confirm("Teenager");
+                } else if (x0 < 60){
+                    confirm("Adult");
+                } else {
+                    confirm("Senior citizen");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Check age</h1>
+        <form>
+            <label>Age</label> <input type="text" id="age" name="age"><br>
+            <br>
+            <br>
+            <input type="button" value="Check" onclick="calculate();">
+        </form>
+    </body>
+</html>             

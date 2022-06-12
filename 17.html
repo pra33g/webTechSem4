@@ -1,0 +1,48 @@
+<html>
+    <head><title>16</title>
+        <script type="text/javascript">
+            function calculate(){
+                var x = parseFloat(document.getElementById('num1').value, 10);
+                if (isNaN(x)){
+                    alert("Error");
+                    return;
+                }
+                var opt = document.getElementById('operation').value;
+                switch(opt){
+                    case "square":
+                        alert(x + String.fromCodePoint(0xb2) + " = " + Math.pow(x, 2));
+                    break;
+                    case "cube":
+                        alert(x + String.fromCodePoint(0xb3) + " = " + Math.pow(x, 3));
+                    break;
+                    case "evenOdd":
+                        if (x % 2 == 0){
+                            alert("Even");
+                        } else {
+                            alert("Odd");
+                        }
+                    break;
+                    default:
+                        alert("Select operation.");
+                    break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <form>
+            <label for="num1">x</label>
+            <input type="text" id="num1" name="num1">
+            <label for="operation"><br>Operation</label>
+            <select id="operation" name="operation">
+                <option value="square" >x&#x0B2;</option>
+                <option value="cube" >x&#xB3;</option>
+                <option value="evenOdd" >Even or Odd</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Calculate" onclick="calculate();">
+        </form>
+    </body>
+</html>             

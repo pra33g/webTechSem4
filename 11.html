@@ -1,0 +1,54 @@
+<html>
+    <head><title>11-Forms</title>
+        <style>
+            body{
+                margin-left: 250px;
+            }
+            .col{
+                float:left;
+                padding: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form" name="form" method="get">
+            <h1>Employee Form</h1>
+            <div class="col">
+                <label> First Name<br></label>
+                <input type="text" name="fname" id="fname"/><br>
+                <label> Designation</label><br>
+                <label>Salary</label><br><br><br>
+                <label>Specialization</label><br><br><br><br>
+                <label>Hobbies</label><br><br><br><br>
+                <label>Address</label><br><br><br><br><br><br>
+                <input type="submit" value="Submit">                
+            </div>
+            <div class="col">
+                <label> Last Name<br></label>
+                <input type="text" name="lname" id="lname"><br>
+                <select id="designation" name="designation">
+                    <option value="-1">Select any one:</option>
+                    <option value="Associate">Associate</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Vice-President">Vice-President</option>
+                    <option value="President">President</option>
+                </select><br>
+                <input type="number" id="salary" name="salary"><br><br>
+                <label for="it">IT</label>
+                <input type="radio" id="it" name="specialization" value="it"><br>
+                <label for="Management">Management</label>
+                <input type="radio" id="Management" name="specialization" value="Management"><br>
+                <label for="Traveling">Traveling</label>
+                <input type="radio" id="Traveling" name="specialization" value="Traveling"><br><br>
+                <input type="checkbox" name="hobbies" id="Sports" value="Sports">
+                <label for="Sports">Sports</label><br>
+                <input type="checkbox" name="hobbies" id="Reading" value="Reading">
+                <label for="Reading">Reading</label><br>
+                <input type="checkbox" name="hobbies" id="Net Surfing" value="Net Surfing">
+                <label for="Net Surfing">Net Surfing</label><br><br>
+                <textarea name="address" rows="4" cols="50">Your address here...</textarea><br><br>
+                <input type="reset" value="reset">
+            </div>
+        </form>
+    </body>
+</html>             

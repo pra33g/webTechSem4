@@ -1,0 +1,18 @@
+BODY {
+    font: 20px Arial, sans-serif;
+    background-image: url("./resources/14-bg.webp");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 1500px 750px;
+    background-position: center;
+    opacity: 4.5;
+}
+
+P {
+    color: rgb(240, 240, 240);
+}
+
+OL {
+    list-style-type: upper-roman;
+    color: red;
+}

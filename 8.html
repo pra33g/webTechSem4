@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#mobilephone').click(function () {            
+                $('#iframeHolderLeft').html('<iframe id="iframeLeft" src="./resources/8-phone.jpg" width="700" height="450"></iframe>');
+                $('#iframeHolderRight').html('<iframe id="iframeRight" src="./8-phone.html" width="700" height="450"></iframe>');
+            });
+            $('#shoes').click(function () {            
+                $('#iframeHolderLeft').html('<iframe id="iframeLeft" src="./resources/8-shoes.jpg" width="700" height="450"></iframe>');
+                $('#iframeHolderRight').html('<iframe id="iframeRight" src="./8-shoes.html" width="700" height="450"></iframe>');
+            });
+            $('#pendrive').click(function () {            
+                $('#iframeHolderLeft').html('<iframe id="iframeLeft" src="./resources/8-pendrive.jpg" width="700" height="450"></iframe>');
+                $('#iframeHolderRight').html('<iframe id="iframeRight" src="./8-pendrive.html" width="700" height="450"></iframe>');
+            });
+            $('#shirt').click(function () {            
+                    $('#iframeHolderLeft').html('<iframe id="iframeLeft" src="./resources/8-shirt.jpg" width="700" height="450"></iframe>');
+                    $('#iframeHolderRight').html('<iframe id="iframeRight" src="./8-shirt.html" width="700" height="450"></iframe>');
+                });
+        });
+    </script>
+    <style>
+        a{
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul type="none" style="list-style-image: url('./resources/8-click.png'); width: 5px; height: 5px;">
+        <li> <a id="mobilephone">Mobile&nbsp;Phone</a></li>
+        <li> <a id="shoes">Shoes</a></li>
+        <li> <a id="pendrive">Pendrive</a></li>
+        <li> <a id="shirt">Shirt</a></li>
+    </ul>
+    
+        <div style="margin-top: 20%;float: left;"  id="iframeHolderLeft">
+            <iframe id="iframeLeft" src="" width="700" height="450"></iframe>
+        </div>
+        <div style="margin-top: 20%;float: right;"  id="iframeHolderRight">
+            <iframe id="iframeRight" src="" width="700" height="450"></iframe>
+        </div>
+
+</body>
+
+</html>
